@@ -46,10 +46,10 @@ describe('validate_json', () => {
 
     test('root keys are valid', () => {
         test_validate(`{"abc": "def"}`, [
-            `root: possible keys: ['speed', 'priority', 'distance_influence', 'areas']. given: 'abc', range: [1, 6]`
+            `root: possible keys: ['speed', 'priority', 'distance_influence', 'areas', 'turn_penalty']. given: 'abc', range: [1, 6]`
         ]);
         test_validate(`{"spee": []}`, [
-            `root: possible keys: ['speed', 'priority', 'distance_influence', 'areas']. given: 'spee', range: [1, 7]`
+            `root: possible keys: ['speed', 'priority', 'distance_influence', 'areas', 'turn_penalty']. given: 'spee', range: [1, 7]`
         ]);
     });
 

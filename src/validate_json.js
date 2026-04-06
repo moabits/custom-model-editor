@@ -1,6 +1,6 @@
 import {parseTree, printParseErrorCode} from "jsonc-parser";
 
-const rootKeys = ['speed', 'priority', 'distance_influence', 'areas'];
+const rootKeys = ['speed', 'priority', 'distance_influence', 'areas', 'turn_penalty'];
 const clauses = ['if', 'else_if', 'else'];
 const operators = ['multiply_by', 'limit_to'];
 const statementKeys = clauses.concat(operators);
